@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import WebKit
 import SmartWKWebView
 
-class ViewController: UIViewController, SmartWKWebViewControllerDelegate {
+class ViewController: UIViewController, WKNavigationDelegate, SmartWKWebViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()

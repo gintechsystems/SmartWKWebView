@@ -15,11 +15,11 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
     // MARK: - Public Variables
     
     public var barHeight: CGFloat = 44
-    public var topMargin: CGFloat = 20
+    public var topMargin: CGFloat = UIApplication.shared.statusBarFrame.size.height
     public var stringLoading = "Loading"
-    public var url: URL!
+    @objc public var url: URL!
     public var webView: WKWebView!
-	public var delegate: SmartWKWebViewControllerDelegate?
+	public weak var delegate: SmartWKWebViewControllerDelegate?
     var toolbar: SmartWKWebViewToolbar!
     
     
@@ -69,16 +69,18 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
     func initToolbar() {
         toolbar = SmartWKWebViewToolbar.init(frame: CGRect(x: 0, y: topMargin, width: UIScreen.main.bounds.width, height: barHeight))
         view.addSubview(toolbar)
-        toolbar.closeButton.addTarget(self, action: #selector(closeTapped), for: UIControlEvents.touchUpInside)
+        toolbar.closeButton.addTarget(self, action: #selector(closeTapped), for: UIControl.Event.touchUpInside)
     }
     
     func initWebView() {
         webView = WKWebView(frame: CGRect.zero)
         webView.backgroundColor = .white
+        
         webView.navigationDelegate = self
         webView.scrollView.delegate = self
-        webView.allowsBackForwardNavigationGestures = true
+        
         webView.scrollView.panGestureRecognizer.addTarget(self, action: #selector(panGestureActionWebView(_:)))
+        
         webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
         view.addSubview(webView)
     }
@@ -86,12 +88,18 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        toolbar.addressLabel.text = url?.absoluteString ?? ""
         toolbar.titleLabel.text = stringLoading
         
         if let URL = url {
             let urlRequest = URLRequest.init(url: URL)
             webView.load(urlRequest)
+            
+            if let host = URL.host {
+                toolbar.addressLabel.text = host
+            }
+            else {
+                toolbar.addressLabel.text = url?.absoluteString ?? ""
+            }
         }
     }
     
@@ -111,6 +119,8 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
     }
     
     deinit {
+        webView.scrollView.delegate = nil
+        
         webView.removeObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress))
         view.removeObserver(self, forKeyPath: #keyPath(UIView.frame))
     }
@@ -119,17 +129,34 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
     // MARK: - Button events
     
     @objc func closeTapped() {
+        if #available(iOS 10.0, *) {
+        }
+        else {
+            // Looks better on iOS 9 to do this transition.
+            modalTransitionStyle = .crossDissolve
+        }
+        
         dismiss()
     }
     
     override func dismiss() {
-        OperationQueue.main.addOperation {
-			self.dismiss(animated: true, completion: {
-				self.delegate?.didDismiss?(viewController: self)
-			})
-        }
+        dismiss(animated: true, completion: {
+            self.delegate?.didDismiss?(viewController: self)
+        })
     }
     
+    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        //super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
+        
+        if (keyPath == "estimatedProgress") {
+            toolbar.progressView.progress = Float(webView.estimatedProgress)
+            toolbar.progressView.isHidden = toolbar.progressView.progress == 1
+        }
+        else if (keyPath == "frame") {
+            let alpha = 1 - (view.frame.origin.y / UIScreen.main.bounds.height)
+            backgroundBlackOverlay.alpha = alpha
+        }
+    }
     
     // MARK: - UIWebViewDelegate
     
@@ -137,20 +164,14 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
         decisionHandler(.allow)
     }
     
-    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == "estimatedProgress" {
-            toolbar.progressView.progress = Float(webView.estimatedProgress)
-            toolbar.progressView.isHidden = toolbar.progressView.progress == 1
-        }
-        
-        if keyPath == "frame" {
-            let alpha = 1 - (view.frame.origin.y / UIScreen.main.bounds.height)
-            backgroundBlackOverlay.alpha = alpha
-        }
-    }
-    
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         toolbar.titleLabel.text = webView.title
+        
+        self.delegate?.didWebViewNavigate?(webView: webView)
+    }
+    
+    public func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
+        self.delegate?.didReceiveServerRedirect?(webView: webView, navigation: navigation)
     }
     
     
@@ -176,4 +197,6 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
 
 @objc public protocol SmartWKWebViewControllerDelegate {
 	@objc optional func didDismiss(viewController: SmartWKWebViewController)
+    @objc optional func didWebViewNavigate(webView: WKWebView)
+    @objc optional func didReceiveServerRedirect(webView: WKWebView, navigation: WKNavigation)
 }

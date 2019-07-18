@@ -1,9 +1,10 @@
 {
   "name": "SmartWKWebView",
-  "version": "0.1.0",
-  "summary": "A short description of SmartWKWebView.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.1.1",
+  "summary": "A WKWebView modal. Written in Swift",
+  "description": "A WKWebView modal to show web pages.",
   "homepage": "https://github.com/barisatamer/SmartWKWebView",
+  "screenshots": "https://github.com/barisatamer/SmartWKWebView/blob/master/imgs/demo.gif?raw=true",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -13,16 +14,16 @@
   },
   "source": {
     "git": "https://github.com/barisatamer/SmartWKWebView.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "SmartWKWebView/Classes/**/*",
-  "resource_bundles": {
-    "SmartWKWebView": [
-      "SmartWKWebView/**/*.{storyboard,xib}"
-    ]
-  },
-  "resources": "SmartWKWebView/Assets/*.xcassets"
+  "source_files": "SmartWKWebView/Classes/*.{h,m,swift}",
+  "resources": [
+    "SmartWKWebView/Assets/*.xcassets",
+    "SmartWKWebView/Classes/*.{xib}"
+  ],
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
 }

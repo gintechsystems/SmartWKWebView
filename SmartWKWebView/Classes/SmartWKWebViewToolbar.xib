@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SmartWKWebViewToolbar" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SmartWKWebViewToolbar" customModule="SmartWKWebView" customModuleProvider="target">
             <connections>
                 <outlet property="addressLabel" destination="ooS-Rc-qtz" id="Cpu-2h-pRn"/>
                 <outlet property="closeButton" destination="0vE-38-wOI" id="Ndx-xh-gj3"/>
-                <outlet property="contentView" destination="Tdn-Ir-MTA" id="eLW-gt-fmR"/>
+                <outlet property="contentView" destination="Tdn-Ir-MTA" id="Pxf-5A-ii1"/>
                 <outlet property="titleLabel" destination="SQ0-xV-wYG" id="1dz-W1-2eT"/>
             </connections>
         </placeholder>

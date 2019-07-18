@@ -9,17 +9,22 @@ import Foundation
 
 public class PannableViewController: UIViewController {
     var panGestureRecognizer: UIPanGestureRecognizer?
+    
     var originalPosition: CGPoint?
-    var currentPositionTouched: CGPoint?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureAction(_:)) )
-        view.addGestureRecognizer(panGestureRecognizer!)
+        
+        // On iOS 9.0, the view frame does not animate the change automatically, avoid using the pan gesture in that case.
+        if #available(iOS 10.0, *) {
+            panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureAction(_:)) )
+            view.addGestureRecognizer(panGestureRecognizer!)
+        }
     }
     
     public override func viewDidLayoutSubviews() {
         super .viewDidLayoutSubviews()
+        
         view.frame = UIScreen.main.bounds
         originalPosition = view.center
     }
@@ -29,14 +34,20 @@ public class PannableViewController: UIViewController {
         
         if panGesture.state == .began {
             originalPosition = view.center
-            currentPositionTouched = panGesture.location(in: view)
-        } else if panGesture.state == .changed {
+        }
+        else if panGesture.state == .changed {
+            var additionalInset :CGFloat = 0.0
+            if #available(iOS 11.0, *) {
+                additionalInset = view.safeAreaInsets.top
+            }
+            
             view.frame.origin = CGPoint(
                 x: view.frame.origin.x,
-                y: translation.y
+                y: translation.y + additionalInset
             )
             
-        } else if panGesture.state == .ended {
+        }
+        else if panGesture.state == .ended {
             let velocity = panGesture.velocity(in: view)
             
             if velocity.y >= 500 {

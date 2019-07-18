@@ -39,7 +39,9 @@ class SmartWKWebViewToolbar: UIView {
     private func commonInit() {
         let bundle = Bundle(for: SmartWKWebViewToolbar.self)
         bundle.loadNibNamed(SmartWKWebViewToolbar.identifier, owner: self, options: nil)
+        
         addSubview(contentView)
+        
         contentView.frame = self.bounds
      
         addProgressView()
