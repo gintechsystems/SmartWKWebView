@@ -40,6 +40,8 @@ class SmartWKWebViewToolbar: UIView {
         let bundle = Bundle(for: SmartWKWebViewToolbar.self)
         bundle.loadNibNamed(SmartWKWebViewToolbar.identifier, owner: self, options: nil)
         
+        closeButton.setImage(UIImage(named: "ic_close", in: bundle, compatibleWith: nil), for: .normal)
+        
         addSubview(contentView)
         
         contentView.frame = self.bounds

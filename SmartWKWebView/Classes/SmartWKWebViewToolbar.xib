@@ -39,7 +39,6 @@
                                 <constraint firstAttribute="height" constant="44" id="l2E-Ke-3Nz"/>
                             </constraints>
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            <state key="normal" image="ic_close"/>
                         </button>
                     </subviews>
                     <constraints>
@@ -119,7 +118,4 @@
             <point key="canvasLocation" x="-258" y="-329"/>
         </view>
     </objects>
-    <resources>
-        <image name="ic_close" width="24" height="24"/>
-    </resources>
 </document>

@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'SmartWKWebView/Classes/*.{h,m,swift}'
 
-  s.resources = ['SmartWKWebView/Assets/*.xcassets', 'SmartWKWebView/Classes/*.{xib}']
+  s.resources = ['SmartWKWebView/Assets/*.{png}', 'SmartWKWebView/Classes/*.{xib}']
 
   s.swift_version = '5.0'
 end

@@ -18,8 +18,8 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
     public var topMargin: CGFloat = UIApplication.shared.statusBarFrame.size.height
     public var stringLoading = "Loading"
     @objc public var url: URL!
-    public var webView: WKWebView!
-	public weak var delegate: SmartWKWebViewControllerDelegate?
+    @objc public var webView: WKWebView!
+	@objc public weak var delegate: SmartWKWebViewControllerDelegate?
     var toolbar: SmartWKWebViewToolbar!
     
     
