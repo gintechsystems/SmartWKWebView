@@ -119,10 +119,15 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
     }
     
     deinit {
-        webView.scrollView.delegate = nil
+        if (webView != nil) {
+            webView.scrollView.delegate = nil
+            
+            webView.removeObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress))
+        }
         
-        webView.removeObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress))
-        view.removeObserver(self, forKeyPath: #keyPath(UIView.frame))
+        if (view != nil) {
+            view.removeObserver(self, forKeyPath: #keyPath(UIView.frame))
+        }
     }
     
     
@@ -161,6 +166,12 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
     // MARK: - UIWebViewDelegate
     
     public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        
+        if let delegate = self.delegate, let _ = delegate.decidePolicy?(webView: webView, navigationAction: navigationAction, decisionHandler: decisionHandler) {
+            // Developer needs to handle the decision handler!
+            return
+        }
+        
         decisionHandler(.allow)
     }
     
@@ -197,6 +208,7 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
 
 @objc public protocol SmartWKWebViewControllerDelegate {
 	@objc optional func didDismiss(viewController: SmartWKWebViewController)
+    @objc optional func decidePolicy(webView: WKWebView, navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void)
     @objc optional func didWebViewNavigate(webView: WKWebView)
     @objc optional func didReceiveServerRedirect(webView: WKWebView, navigation: WKNavigation)
 }
