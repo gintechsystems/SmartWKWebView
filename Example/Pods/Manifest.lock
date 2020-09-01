@@ -1,5 +1,5 @@
 PODS:
-  - SmartWKWebView (0.1.1)
+  - SmartWKWebView (0.1.2)
 
 DEPENDENCIES:
   - SmartWKWebView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SmartWKWebView: 20ab10a32a45384991df2d863927e6b0421730b5
+  SmartWKWebView: 8ff66d280abdcd3013b8e91d7cf8d4a3718fd6f1
 
 PODFILE CHECKSUM: 9af7931cc457f7efb6c3572e0a3e2476f0095a4d
 

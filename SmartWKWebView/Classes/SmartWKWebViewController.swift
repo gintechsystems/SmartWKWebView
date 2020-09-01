@@ -131,6 +131,10 @@ public class SmartWKWebViewController: PannableViewController, UIScrollViewDeleg
         }
     }
     
+    public func updateTitle(title: String) {
+        toolbar.titleLabel.text = title
+    }
+    
     
     // MARK: - Button events
     

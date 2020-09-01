@@ -1,6 +1,6 @@
 {
   "name": "SmartWKWebView",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "A WKWebView modal. Written in Swift",
   "description": "A WKWebView modal to show web pages.",
   "homepage": "https://github.com/barisatamer/SmartWKWebView",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/barisatamer/SmartWKWebView.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "9.0"
