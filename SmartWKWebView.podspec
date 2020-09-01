@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SmartWKWebView'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A WKWebView modal. Written in Swift'
   s.description      = 'A WKWebView modal to show web pages.'
   s.homepage         = 'https://github.com/barisatamer/SmartWKWebView'
