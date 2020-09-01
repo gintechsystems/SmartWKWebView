@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import WebKit
 
-public class SmartWKWebViewController: PannableViewController, WKNavigationDelegate, UIScrollViewDelegate {
+public class SmartWKWebViewController: PannableViewController, UIScrollViewDelegate {
 
     
     // MARK: - Public Variables
@@ -20,6 +20,7 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
     @objc public var url: URL!
     @objc public var webView: WKWebView!
 	@objc public weak var delegate: SmartWKWebViewControllerDelegate?
+    @objc public weak var webViewNavigationDelegate: WKNavigationDelegate?
     var toolbar: SmartWKWebViewToolbar!
     
     
@@ -76,7 +77,7 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
         webView = WKWebView(frame: CGRect.zero)
         webView.backgroundColor = .white
         
-        webView.navigationDelegate = self
+        webView.navigationDelegate = webViewNavigationDelegate
         webView.scrollView.delegate = self
         
         webView.scrollView.panGestureRecognizer.addTarget(self, action: #selector(panGestureActionWebView(_:)))
@@ -163,28 +164,6 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
         }
     }
     
-    // MARK: - UIWebViewDelegate
-    
-    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        
-        if let delegate = self.delegate, let _ = delegate.decidePolicy?(webView: webView, navigationAction: navigationAction, decisionHandler: decisionHandler) {
-            // Developer needs to handle the decision handler!
-            return
-        }
-        
-        decisionHandler(.allow)
-    }
-    
-    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        toolbar.titleLabel.text = webView.title
-        
-        self.delegate?.didWebViewNavigate?(webView: webView)
-    }
-    
-    public func webView(_ webView: WKWebView, didReceiveServerRedirectForProvisionalNavigation navigation: WKNavigation!) {
-        self.delegate?.didReceiveServerRedirect?(webView: webView, navigation: navigation)
-    }
-    
     
     // MARK: - ScrollView Delegate
     
@@ -208,7 +187,4 @@ public class SmartWKWebViewController: PannableViewController, WKNavigationDeleg
 
 @objc public protocol SmartWKWebViewControllerDelegate {
 	@objc optional func didDismiss(viewController: SmartWKWebViewController)
-    @objc optional func decidePolicy(webView: WKWebView, navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void)
-    @objc optional func didWebViewNavigate(webView: WKWebView)
-    @objc optional func didReceiveServerRedirect(webView: WKWebView, navigation: WKNavigation)
 }

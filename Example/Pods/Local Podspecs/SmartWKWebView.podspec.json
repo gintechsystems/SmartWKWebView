@@ -21,7 +21,7 @@
   },
   "source_files": "SmartWKWebView/Classes/*.{h,m,swift}",
   "resources": [
-    "SmartWKWebView/Assets/*.xcassets",
+    "SmartWKWebView/Assets/*.{png}",
     "SmartWKWebView/Classes/*.{xib}"
   ],
   "swift_versions": "5.0",

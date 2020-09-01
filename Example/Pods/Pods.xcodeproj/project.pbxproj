@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DC6F24E4702F877F0E462F5BDF45E82 /* SmartWKWebViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D195FA6E6FFF1E8BFC59F1C0FA653D79 /* SmartWKWebViewToolbar.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		33B7A1443DF39DF51B01A669847DC0BC /* SmartWKWebView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 544EFA92B0671BB09C4B47C4279B0AB0 /* SmartWKWebView-dummy.m */; };
+		05D292EC353C4E642C8ED408D32860C8 /* ic_close_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 107BF40BCC83BF3482CE726053CD290E /* ic_close_2x.png */; };
+		0F912F066D3807BA69C7A4756D283931 /* SmartWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485BC6EE09765B2CEC0EC52160820B08 /* SmartWKWebViewController.swift */; };
+		14C31E92A88499026322BF2024CF86C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		35CECEDE01395A16AC1EA786A27DD666 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		42A436B5F7149D19DA4B92AA8D418BEF /* SmartWKWebView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D22124A12AF8F776AC4248B46B7381D /* SmartWKWebView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45459DC2057DBB24E256BF11D100E98C /* Pods-SmartWKWebView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DC5727A014F3D28D63E4211AEAF00B /* Pods-SmartWKWebView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66A6B2E63FEFB54A19B172BF82A9383D /* SmartWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70773EA635D51A086616DC56DB2CB078 /* SmartWKWebViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		734F8ABF22E125C500F5EF68 /* ic_close_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 734F8ABC22E125C500F5EF68 /* ic_close_2x.png */; };
-		734F8AC022E125C500F5EF68 /* ic_close_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 734F8ABD22E125C500F5EF68 /* ic_close_3x.png */; };
-		734F8AC122E125C500F5EF68 /* ic_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 734F8ABE22E125C500F5EF68 /* ic_close.png */; };
-		73AE6A1DB43D6D4B15899D3BEF9E4500 /* SmartWKWebView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF6CE3E6C059DBBCD6B59857D7A78AE /* SmartWKWebView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5493282D7197368429FED538C93F158B /* SmartWKWebViewToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF319E3ADBF9CA0867F973711F10B52C /* SmartWKWebViewToolbar.swift */; };
+		601C54254281E6AAEC7B95B999CBD77A /* ic_close_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60AAF25119D87B4AA2AB32015BBF3233 /* ic_close_3x.png */; };
 		776D2CA30D68ECF0A20EAC68957B16C6 /* Pods-SmartWKWebView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B40643EE463278EF823DC653A8DB52D9 /* Pods-SmartWKWebView_Example-dummy.m */; };
 		7A20811271F2BE474D91E43328F83B77 /* Pods-SmartWKWebView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A822462B4AF4D10EDC34F192812EC12 /* Pods-SmartWKWebView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		881188ED73CDBD97A23A6C50D274E266 /* SmartWKWebViewToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AF21B086C452EE182C0D222DEE1582E /* SmartWKWebViewToolbar.xib */; };
-		A63D14F964A6AEA072EDA11102A691EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9BCC980DE6A845251E6D8A50C0C8DECB /* SmartWKWebViewToolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A4E7BA50346CB34006F9FA88DA79162 /* SmartWKWebViewToolbar.xib */; };
 		B87FC9FC7223A2489B0091F7D30E5F09 /* Pods-SmartWKWebView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0148BF494C70EB531343D9C0C50252 /* Pods-SmartWKWebView_Tests-dummy.m */; };
+		CBF4A9963ED00BB00515CE713F1BB315 /* PannableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B7E32AC1205EA57E0D837D2525D1E8 /* PannableViewController.swift */; };
 		CFC3F183301ED52DA1F5496F89EC63D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		F098EBA8ACBA62B136D926CE600AD0F1 /* PannableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA5E4D6A43D6155007552CDBB04EDE0 /* PannableViewController.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EDF1FDA1F55121659F3DAD9FE84F59D5 /* SmartWKWebView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD13DD1C0DD6F0E05ED5ED5C996FF41A /* SmartWKWebView-dummy.m */; };
+		FF8668B6E09F2CC845B1DDC75163D7A7 /* ic_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 70ADEA2719147C6E17C250F31FE14EA6 /* ic_close.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,58 +45,59 @@
 /* Begin PBXFileReference section */
 		0607F7E145840BB152656D3BD079A32F /* Pods-SmartWKWebView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartWKWebView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0C99C1AE43E2E39E2B194377CA6E19BD /* Pods-SmartWKWebView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartWKWebView_Example-Info.plist"; sourceTree = "<group>"; };
-		13436E5312D8B9BC55B9EF5AEFA38D51 /* SmartWKWebView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SmartWKWebView.modulemap; sourceTree = "<group>"; };
+		107BF40BCC83BF3482CE726053CD290E /* ic_close_2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_close_2x.png; sourceTree = "<group>"; };
 		19F7CA0E9457B8C194DADABC375328AA /* Pods-SmartWKWebView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartWKWebView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		219D12053F808690D49E1C018A6300F5 /* Pods_SmartWKWebView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartWKWebView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23EF04EA8A1AB5B27A35E4BCAE3A6829 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		219D12053F808690D49E1C018A6300F5 /* Pods_SmartWKWebView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartWKWebView_Example.framework; path = "Pods-SmartWKWebView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9AC7E0CE5E803748DF57B166189DB5 /* SmartWKWebView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SmartWKWebView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3CA5E4D6A43D6155007552CDBB04EDE0 /* PannableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PannableViewController.swift; path = SmartWKWebView/Classes/PannableViewController.swift; sourceTree = "<group>"; };
 		3DEACB2E9A5FE9EC6782F6A93614CBAB /* Pods-SmartWKWebView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmartWKWebView_Tests.modulemap"; sourceTree = "<group>"; };
+		3F6B42ABC4AA100297A5AAB4C65B955F /* SmartWKWebView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmartWKWebView-prefix.pch"; sourceTree = "<group>"; };
+		47965E1D23823DB417D0C3DEAA79C53F /* SmartWKWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmartWKWebView.release.xcconfig; sourceTree = "<group>"; };
+		485BC6EE09765B2CEC0EC52160820B08 /* SmartWKWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmartWKWebViewController.swift; path = SmartWKWebView/Classes/SmartWKWebViewController.swift; sourceTree = "<group>"; };
 		4E0148BF494C70EB531343D9C0C50252 /* Pods-SmartWKWebView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartWKWebView_Tests-dummy.m"; sourceTree = "<group>"; };
 		507120CA56A07F3EC2B77BEEC7547A91 /* Pods-SmartWKWebView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartWKWebView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		50DC5727A014F3D28D63E4211AEAF00B /* Pods-SmartWKWebView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartWKWebView_Example-umbrella.h"; sourceTree = "<group>"; };
-		51A9AB6456998EEC67BCF0BF85A4A762 /* Pods_SmartWKWebView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartWKWebView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		544EFA92B0671BB09C4B47C4279B0AB0 /* SmartWKWebView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SmartWKWebView-dummy.m"; sourceTree = "<group>"; };
+		51A9AB6456998EEC67BCF0BF85A4A762 /* Pods_SmartWKWebView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartWKWebView_Tests.framework; path = "Pods-SmartWKWebView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A822462B4AF4D10EDC34F192812EC12 /* Pods-SmartWKWebView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartWKWebView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		60AAF25119D87B4AA2AB32015BBF3233 /* ic_close_3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_close_3x.png; sourceTree = "<group>"; };
 		648D5D81FB94A229E97ABC6F5311B112 /* Pods-SmartWKWebView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartWKWebView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		661329596ACEA9CE6B91429795CCD9BE /* SmartWKWebView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmartWKWebView-prefix.pch"; sourceTree = "<group>"; };
-		6BEC884622BDF1EEBBA6B261D804ECF4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6D22124A12AF8F776AC4248B46B7381D /* SmartWKWebView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmartWKWebView-umbrella.h"; sourceTree = "<group>"; };
 		6FCA0E110185CC61D7FDB8CE45CBFAA6 /* Pods-SmartWKWebView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartWKWebView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6FF6CE3E6C059DBBCD6B59857D7A78AE /* SmartWKWebView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SmartWKWebView-umbrella.h"; sourceTree = "<group>"; };
-		70773EA635D51A086616DC56DB2CB078 /* SmartWKWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmartWKWebViewController.swift; path = SmartWKWebView/Classes/SmartWKWebViewController.swift; sourceTree = "<group>"; };
-		734F8ABC22E125C500F5EF68 /* ic_close_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close_2x.png; sourceTree = "<group>"; };
-		734F8ABD22E125C500F5EF68 /* ic_close_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close_3x.png; sourceTree = "<group>"; };
-		734F8ABE22E125C500F5EF68 /* ic_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close.png; sourceTree = "<group>"; };
+		70ADEA2719147C6E17C250F31FE14EA6 /* ic_close.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_close.png; sourceTree = "<group>"; };
+		76B7E32AC1205EA57E0D837D2525D1E8 /* PannableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PannableViewController.swift; path = SmartWKWebView/Classes/PannableViewController.swift; sourceTree = "<group>"; };
 		810A40AAAEDE13FBAAE0C6783F15222D /* Pods-SmartWKWebView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartWKWebView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8AF21B086C452EE182C0D222DEE1582E /* SmartWKWebViewToolbar.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SmartWKWebViewToolbar.xib; sourceTree = "<group>"; };
+		8A4E7BA50346CB34006F9FA88DA79162 /* SmartWKWebViewToolbar.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SmartWKWebViewToolbar.xib; sourceTree = "<group>"; };
 		915F50D4B34DCA6444F4197804F11ECC /* Pods-SmartWKWebView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SmartWKWebView_Example.modulemap"; sourceTree = "<group>"; };
 		9287F7FA2924BCBDB7C35C5480203B47 /* Pods-SmartWKWebView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartWKWebView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DB684B1CC6AC752BF5AF8299877387F /* Pods-SmartWKWebView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartWKWebView_Tests-Info.plist"; sourceTree = "<group>"; };
+		9DF7DD7B868CE4DE3FB216EE790592A6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		A29F1DD4F0CEE96FC7A1D71AF9850184 /* Pods-SmartWKWebView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartWKWebView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B40643EE463278EF823DC653A8DB52D9 /* Pods-SmartWKWebView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartWKWebView_Example-dummy.m"; sourceTree = "<group>"; };
-		C3AEFBAB8EA21C9916CB70F8566EDFBB /* SmartWKWebView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SmartWKWebView-Info.plist"; sourceTree = "<group>"; };
-		C577E58BCF5605C5F509A18D6544B78B /* SmartWKWebView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SmartWKWebView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D195FA6E6FFF1E8BFC59F1C0FA653D79 /* SmartWKWebViewToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmartWKWebViewToolbar.swift; path = SmartWKWebView/Classes/SmartWKWebViewToolbar.swift; sourceTree = "<group>"; };
-		E8D557FEC63ADA835BC56F927B83476F /* SmartWKWebView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmartWKWebView.xcconfig; sourceTree = "<group>"; };
+		BF8C9C9CF7924093498404FA91DF7077 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C65FCCF5479AEAE6053EE662B679C674 /* SmartWKWebView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SmartWKWebView.modulemap; sourceTree = "<group>"; };
+		CF637707116E5AEE421EC0127F90C35C /* SmartWKWebView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SmartWKWebView-Info.plist"; sourceTree = "<group>"; };
+		DF319E3ADBF9CA0867F973711F10B52C /* SmartWKWebViewToolbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmartWKWebViewToolbar.swift; path = SmartWKWebView/Classes/SmartWKWebViewToolbar.swift; sourceTree = "<group>"; };
+		E4E20399975A0D8D3B0DD2F28DB42BF3 /* SmartWKWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SmartWKWebView.debug.xcconfig; sourceTree = "<group>"; };
 		F64E79A4A2CB1C2A132E10CEF95610B9 /* Pods-SmartWKWebView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartWKWebView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F8BD3969E191BEB7F3B06641BABA61CE /* SmartWKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SmartWKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BD3969E191BEB7F3B06641BABA61CE /* SmartWKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SmartWKWebView.framework; path = SmartWKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD13DD1C0DD6F0E05ED5ED5C996FF41A /* SmartWKWebView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SmartWKWebView-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		26F2EDA8B102EC05B65A05C045FCE093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C31E92A88499026322BF2024CF86C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A433F57F1B3E98F38ECCB03357C81B3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CFC3F183301ED52DA1F5496F89EC63D8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DB16DCA70AC632DF330595BE12A63630 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A63D14F964A6AEA072EDA11102A691EA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,39 +112,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A46DFFEBA2CC292ED309F82A6BB4107 /* Assets */ = {
+		262435F134C2E3519078A88169AC9BE0 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				734F8ABC22E125C500F5EF68 /* ic_close_2x.png */,
-				734F8ABD22E125C500F5EF68 /* ic_close_3x.png */,
-				734F8ABE22E125C500F5EF68 /* ic_close.png */,
-			);
-			name = Assets;
-			path = SmartWKWebView/Assets;
-			sourceTree = "<group>";
-		};
-		36C07D8ED3C1D12BB1B6B1AB05D1B4D0 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				23EF04EA8A1AB5B27A35E4BCAE3A6829 /* LICENSE */,
-				6BEC884622BDF1EEBBA6B261D804ECF4 /* README.md */,
-				C577E58BCF5605C5F509A18D6544B78B /* SmartWKWebView.podspec */,
+				9DF7DD7B868CE4DE3FB216EE790592A6 /* LICENSE */,
+				BF8C9C9CF7924093498404FA91DF7077 /* README.md */,
+				2A9AC7E0CE5E803748DF57B166189DB5 /* SmartWKWebView.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		449F297CAB87974646419763458D5CBF /* Support Files */ = {
+		358A6A196CD643EB324F7916FBD96BF9 /* SmartWKWebView */ = {
 			isa = PBXGroup;
 			children = (
-				13436E5312D8B9BC55B9EF5AEFA38D51 /* SmartWKWebView.modulemap */,
-				E8D557FEC63ADA835BC56F927B83476F /* SmartWKWebView.xcconfig */,
-				544EFA92B0671BB09C4B47C4279B0AB0 /* SmartWKWebView-dummy.m */,
-				C3AEFBAB8EA21C9916CB70F8566EDFBB /* SmartWKWebView-Info.plist */,
-				661329596ACEA9CE6B91429795CCD9BE /* SmartWKWebView-prefix.pch */,
-				6FF6CE3E6C059DBBCD6B59857D7A78AE /* SmartWKWebView-umbrella.h */,
+				76B7E32AC1205EA57E0D837D2525D1E8 /* PannableViewController.swift */,
+				485BC6EE09765B2CEC0EC52160820B08 /* SmartWKWebViewController.swift */,
+				DF319E3ADBF9CA0867F973711F10B52C /* SmartWKWebViewToolbar.swift */,
+				262435F134C2E3519078A88169AC9BE0 /* Pod */,
+				F36B2D18969EFCAED595C7583C9F4FC2 /* Resources */,
+				CDF222060AEBB220C7599DA609E244B4 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SmartWKWebView";
+			name = SmartWKWebView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		6AF573988DDE11253680C383D5043F14 /* Pods-SmartWKWebView_Tests */ = {
@@ -162,18 +152,13 @@
 			path = "Target Support Files/Pods-SmartWKWebView_Tests";
 			sourceTree = "<group>";
 		};
-		6C15F2168A38763EA1612F2369FA41E3 /* SmartWKWebView */ = {
+		7523CDDE50E38F339AFC310049189FE8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3CA5E4D6A43D6155007552CDBB04EDE0 /* PannableViewController.swift */,
-				70773EA635D51A086616DC56DB2CB078 /* SmartWKWebViewController.swift */,
-				D195FA6E6FFF1E8BFC59F1C0FA653D79 /* SmartWKWebViewToolbar.swift */,
-				36C07D8ED3C1D12BB1B6B1AB05D1B4D0 /* Pod */,
-				D17E613EF05C26EADEBDEEAA0B05D542 /* Resources */,
-				449F297CAB87974646419763458D5CBF /* Support Files */,
+				8A4E7BA50346CB34006F9FA88DA79162 /* SmartWKWebViewToolbar.xib */,
 			);
-			name = SmartWKWebView;
-			path = ../..;
+			name = Classes;
+			path = SmartWKWebView/Classes;
 			sourceTree = "<group>";
 		};
 		809E5A8E7F2ED70260F2C3ED50F5C9C9 /* Products */ = {
@@ -195,21 +180,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		B0FDC52F9D606AA901181AA35D32CA47 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				70ADEA2719147C6E17C250F31FE14EA6 /* ic_close.png */,
+				107BF40BCC83BF3482CE726053CD290E /* ic_close_2x.png */,
+				60AAF25119D87B4AA2AB32015BBF3233 /* ic_close_3x.png */,
+			);
+			name = Assets;
+			path = SmartWKWebView/Assets;
+			sourceTree = "<group>";
+		};
 		B50583BB52CC71051AB7C2907756B52B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6C15F2168A38763EA1612F2369FA41E3 /* SmartWKWebView */,
+				358A6A196CD643EB324F7916FBD96BF9 /* SmartWKWebView */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		BE7EC15BA22D77BC76B155DDE9501750 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8AF21B086C452EE182C0D222DEE1582E /* SmartWKWebViewToolbar.xib */,
-			);
-			name = Classes;
-			path = SmartWKWebView/Classes;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -218,6 +205,21 @@
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		CDF222060AEBB220C7599DA609E244B4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C65FCCF5479AEAE6053EE662B679C674 /* SmartWKWebView.modulemap */,
+				FD13DD1C0DD6F0E05ED5ED5C996FF41A /* SmartWKWebView-dummy.m */,
+				CF637707116E5AEE421EC0127F90C35C /* SmartWKWebView-Info.plist */,
+				3F6B42ABC4AA100297A5AAB4C65B955F /* SmartWKWebView-prefix.pch */,
+				6D22124A12AF8F776AC4248B46B7381D /* SmartWKWebView-umbrella.h */,
+				E4E20399975A0D8D3B0DD2F28DB42BF3 /* SmartWKWebView.debug.xcconfig */,
+				47965E1D23823DB417D0C3DEAA79C53F /* SmartWKWebView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SmartWKWebView";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -229,15 +231,6 @@
 				809E5A8E7F2ED70260F2C3ED50F5C9C9 /* Products */,
 				A5B780C6F5D58D77541447403107C9D1 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D17E613EF05C26EADEBDEEAA0B05D542 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				2A46DFFEBA2CC292ED309F82A6BB4107 /* Assets */,
-				BE7EC15BA22D77BC76B155DDE9501750 /* Classes */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -265,14 +258,23 @@
 			path = "Target Support Files/Pods-SmartWKWebView_Example";
 			sourceTree = "<group>";
 		};
+		F36B2D18969EFCAED595C7583C9F4FC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0FDC52F9D606AA901181AA35D32CA47 /* Assets */,
+				7523CDDE50E38F339AFC310049189FE8 /* Classes */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		21B5C5A6B4097E5BA341B92D194CB27E /* Headers */ = {
+		32768BED13082221386DA47454AE0FF3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73AE6A1DB43D6D4B15899D3BEF9E4500 /* SmartWKWebView-umbrella.h in Headers */,
+				42A436B5F7149D19DA4B92AA8D418BEF /* SmartWKWebView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +299,12 @@
 /* Begin PBXNativeTarget section */
 		031AB12CC525B3448CAD09F3E0064474 /* SmartWKWebView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E01591AFC36F3B6512B3A6AAD58A8DD3 /* Build configuration list for PBXNativeTarget "SmartWKWebView" */;
+			buildConfigurationList = 16519D6012D5B2002CD1B370FFABAF9F /* Build configuration list for PBXNativeTarget "SmartWKWebView" */;
 			buildPhases = (
-				21B5C5A6B4097E5BA341B92D194CB27E /* Headers */,
-				862707649B7DB37402ED8F8613A759B1 /* Sources */,
-				DB16DCA70AC632DF330595BE12A63630 /* Frameworks */,
-				DB198242EA558BE2CA412DC816694EFA /* Resources */,
+				32768BED13082221386DA47454AE0FF3 /* Headers */,
+				5277A61F8129B226A92EF73A7BB26708 /* Sources */,
+				26F2EDA8B102EC05B65A05C045FCE093 /* Frameworks */,
+				D9DFE55E48F850E38BE39DB6F6AF4306 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -366,6 +368,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 809E5A8E7F2ED70260F2C3ED50F5C9C9 /* Products */;
@@ -394,20 +397,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DB198242EA558BE2CA412DC816694EFA /* Resources */ = {
+		D9DFE55E48F850E38BE39DB6F6AF4306 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				734F8AC122E125C500F5EF68 /* ic_close.png in Resources */,
-				734F8AC022E125C500F5EF68 /* ic_close_3x.png in Resources */,
-				734F8ABF22E125C500F5EF68 /* ic_close_2x.png in Resources */,
-				881188ED73CDBD97A23A6C50D274E266 /* SmartWKWebViewToolbar.xib in Resources */,
+				FF8668B6E09F2CC845B1DDC75163D7A7 /* ic_close.png in Resources */,
+				05D292EC353C4E642C8ED408D32860C8 /* ic_close_2x.png in Resources */,
+				601C54254281E6AAEC7B95B999CBD77A /* ic_close_3x.png in Resources */,
+				9BCC980DE6A845251E6D8A50C0C8DECB /* SmartWKWebViewToolbar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5277A61F8129B226A92EF73A7BB26708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF4A9963ED00BB00515CE713F1BB315 /* PannableViewController.swift in Sources */,
+				EDF1FDA1F55121659F3DAD9FE84F59D5 /* SmartWKWebView-dummy.m in Sources */,
+				0F912F066D3807BA69C7A4756D283931 /* SmartWKWebViewController.swift in Sources */,
+				5493282D7197368429FED538C93F158B /* SmartWKWebViewToolbar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5BF16598FC2553B4D24602A4B688B42D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -421,17 +435,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				776D2CA30D68ECF0A20EAC68957B16C6 /* Pods-SmartWKWebView_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		862707649B7DB37402ED8F8613A759B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F098EBA8ACBA62B136D926CE600AD0F1 /* PannableViewController.swift in Sources */,
-				33B7A1443DF39DF51B01A669847DC0BC /* SmartWKWebView-dummy.m in Sources */,
-				66A6B2E63FEFB54A19B172BF82A9383D /* SmartWKWebViewController.swift in Sources */,
-				2DC6F24E4702F877F0E462F5BDF45E82 /* SmartWKWebViewToolbar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,7 +575,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -676,9 +680,9 @@
 			};
 			name = Debug;
 		};
-		E1124DECF86C2AE0B4A61194B8C3002C /* Release */ = {
+		9AEB5CF422E78E7026D6F74769860990 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8D557FEC63ADA835BC56F927B83476F /* SmartWKWebView.xcconfig */;
+			baseConfigurationReference = 47965E1D23823DB417D0C3DEAA79C53F /* SmartWKWebView.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -708,9 +712,9 @@
 			};
 			name = Release;
 		};
-		E11D42AE5CDD641A7C557BEE5A1A3B50 /* Debug */ = {
+		B92059AE43971202BBA94B1F57606850 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8D557FEC63ADA835BC56F927B83476F /* SmartWKWebView.xcconfig */;
+			baseConfigurationReference = E4E20399975A0D8D3B0DD2F28DB42BF3 /* SmartWKWebView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -785,6 +789,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		16519D6012D5B2002CD1B370FFABAF9F /* Build configuration list for PBXNativeTarget "SmartWKWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B92059AE43971202BBA94B1F57606850 /* Debug */,
+				9AEB5CF422E78E7026D6F74769860990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -799,15 +812,6 @@
 			buildConfigurations = (
 				6C91CECA1CAAE89A49C9A3687E33FA59 /* Debug */,
 				904390E32464ECA5E614B696B194BD46 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E01591AFC36F3B6512B3A6AAD58A8DD3 /* Build configuration list for PBXNativeTarget "SmartWKWebView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E11D42AE5CDD641A7C557BEE5A1A3B50 /* Debug */,
-				E1124DECF86C2AE0B4A61194B8C3002C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
